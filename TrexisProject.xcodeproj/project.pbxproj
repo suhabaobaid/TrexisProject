@@ -10,12 +10,22 @@
 		1A35B5582872206C0007A1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5572872206C0007A1FB /* AppDelegate.swift */; };
 		1A35B55A2872206C0007A1FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5592872206C0007A1FB /* SceneDelegate.swift */; };
 		1A35B55C2872206C0007A1FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B55B2872206C0007A1FB /* ViewController.swift */; };
-		1A35B55F2872206C0007A1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B55D2872206C0007A1FB /* Main.storyboard */; };
 		1A35B5612872206E0007A1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B5602872206E0007A1FB /* Assets.xcassets */; };
 		1A35B5642872206E0007A1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B5622872206E0007A1FB /* LaunchScreen.storyboard */; };
 		1A35B56F2872206E0007A1FB /* TrexisProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B56E2872206E0007A1FB /* TrexisProjectTests.swift */; };
 		1A35B5792872206E0007A1FB /* TrexisProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5782872206E0007A1FB /* TrexisProjectUITests.swift */; };
 		1A35B57B2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B57A2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift */; };
+		1A35B589287220C60007A1FB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B588287220C60007A1FB /* Coordinator.swift */; };
+		1A35B58B287220EC0007A1FB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B58A287220EC0007A1FB /* Router.swift */; };
+		1A35B58E2872210E0007A1FB /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B58D2872210E0007A1FB /* Presentable.swift */; };
+		1A35B592287221480007A1FB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B591287221480007A1FB /* AppCoordinator.swift */; };
+		1A35B595287223B20007A1FB /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B594287223B20007A1FB /* UIViewController+Ext.swift */; };
+		1A35B599287224E20007A1FB /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B598287224E20007A1FB /* TabCoordinator.swift */; };
+		1A35B59B287224EF0007A1FB /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B59A287224EF0007A1FB /* AuthCoordinator.swift */; };
+		1A35B59D2872263C0007A1FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B59C2872263C0007A1FB /* LoginViewController.swift */; };
+		1A35B5A5287233C20007A1FB /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5A4287233C20007A1FB /* DashboardCoordinator.swift */; };
+		1A35B5A7287234100007A1FB /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5A6287234100007A1FB /* ProfileCoordinator.swift */; };
+		1A35B5A92872341A0007A1FB /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5A82872341A0007A1FB /* FavoriteCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +50,6 @@
 		1A35B5572872206C0007A1FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A35B5592872206C0007A1FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A35B55B2872206C0007A1FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A35B55E2872206C0007A1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A35B5602872206E0007A1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A35B5632872206E0007A1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A35B5652872206E0007A1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		1A35B5742872206E0007A1FB /* TrexisProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrexisProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A35B5782872206E0007A1FB /* TrexisProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexisProjectUITests.swift; sourceTree = "<group>"; };
 		1A35B57A2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexisProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A35B588287220C60007A1FB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1A35B58A287220EC0007A1FB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1A35B58D2872210E0007A1FB /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		1A35B591287221480007A1FB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1A35B594287223B20007A1FB /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		1A35B598287224E20007A1FB /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		1A35B59A287224EF0007A1FB /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		1A35B59C2872263C0007A1FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A35B5A4287233C20007A1FB /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		1A35B5A6287234100007A1FB /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		1A35B5A82872341A0007A1FB /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +119,12 @@
 		1A35B5562872206C0007A1FB /* TrexisProject */ = {
 			isa = PBXGroup;
 			children = (
-				1A35B5572872206C0007A1FB /* AppDelegate.swift */,
-				1A35B5592872206C0007A1FB /* SceneDelegate.swift */,
+				1A35B593287223A60007A1FB /* Extensions */,
+				1A35B58C287220FC0007A1FB /* Protocols */,
+				1A35B587287220BA0007A1FB /* Architecture */,
+				1A35B58F287221260007A1FB /* AppDelegate */,
+				1A35B5902872213B0007A1FB /* App */,
 				1A35B55B2872206C0007A1FB /* ViewController.swift */,
-				1A35B55D2872206C0007A1FB /* Main.storyboard */,
 				1A35B5602872206E0007A1FB /* Assets.xcassets */,
 				1A35B5622872206E0007A1FB /* LaunchScreen.storyboard */,
 				1A35B5652872206E0007A1FB /* Info.plist */,
@@ -125,6 +147,102 @@
 				1A35B57A2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift */,
 			);
 			path = TrexisProjectUITests;
+			sourceTree = "<group>";
+		};
+		1A35B587287220BA0007A1FB /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B588287220C60007A1FB /* Coordinator.swift */,
+				1A35B58A287220EC0007A1FB /* Router.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		1A35B58C287220FC0007A1FB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B58D2872210E0007A1FB /* Presentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1A35B58F287221260007A1FB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5572872206C0007A1FB /* AppDelegate.swift */,
+				1A35B5592872206C0007A1FB /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1A35B5902872213B0007A1FB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B591287221480007A1FB /* AppCoordinator.swift */,
+				1A35B5A3287233930007A1FB /* Favorite */,
+				1A35B5A22872333B0007A1FB /* Profile */,
+				1A35B5A12872332E0007A1FB /* Dashboard */,
+				1A35B597287224B80007A1FB /* Tabbar */,
+				1A35B596287224AF0007A1FB /* Auth */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A35B593287223A60007A1FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B594287223B20007A1FB /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A35B596287224AF0007A1FB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B59A287224EF0007A1FB /* AuthCoordinator.swift */,
+				1A35B59E287226400007A1FB /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1A35B597287224B80007A1FB /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B598287224E20007A1FB /* TabCoordinator.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1A35B59E287226400007A1FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B59C2872263C0007A1FB /* LoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A35B5A12872332E0007A1FB /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5A4287233C20007A1FB /* DashboardCoordinator.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		1A35B5A22872333B0007A1FB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5A6287234100007A1FB /* ProfileCoordinator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1A35B5A3287233930007A1FB /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5A82872341A0007A1FB /* FavoriteCoordinator.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +351,6 @@
 			files = (
 				1A35B5642872206E0007A1FB /* LaunchScreen.storyboard in Resources */,
 				1A35B5612872206E0007A1FB /* Assets.xcassets in Resources */,
-				1A35B55F2872206C0007A1FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +375,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A35B5A5287233C20007A1FB /* DashboardCoordinator.swift in Sources */,
+				1A35B59B287224EF0007A1FB /* AuthCoordinator.swift in Sources */,
+				1A35B589287220C60007A1FB /* Coordinator.swift in Sources */,
+				1A35B599287224E20007A1FB /* TabCoordinator.swift in Sources */,
 				1A35B55C2872206C0007A1FB /* ViewController.swift in Sources */,
+				1A35B58B287220EC0007A1FB /* Router.swift in Sources */,
 				1A35B5582872206C0007A1FB /* AppDelegate.swift in Sources */,
+				1A35B5A92872341A0007A1FB /* FavoriteCoordinator.swift in Sources */,
+				1A35B5A7287234100007A1FB /* ProfileCoordinator.swift in Sources */,
 				1A35B55A2872206C0007A1FB /* SceneDelegate.swift in Sources */,
+				1A35B58E2872210E0007A1FB /* Presentable.swift in Sources */,
+				1A35B595287223B20007A1FB /* UIViewController+Ext.swift in Sources */,
+				1A35B592287221480007A1FB /* AppCoordinator.swift in Sources */,
+				1A35B59D2872263C0007A1FB /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1A35B55D2872206C0007A1FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A35B55E2872206C0007A1FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1A35B5622872206E0007A1FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +562,6 @@
 				INFOPLIST_FILE = TrexisProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +589,6 @@
 				INFOPLIST_FILE = TrexisProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
