@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A35B5582872206C0007A1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5572872206C0007A1FB /* AppDelegate.swift */; };
+		1A35B55A2872206C0007A1FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5592872206C0007A1FB /* SceneDelegate.swift */; };
+		1A35B55C2872206C0007A1FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B55B2872206C0007A1FB /* ViewController.swift */; };
+		1A35B55F2872206C0007A1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B55D2872206C0007A1FB /* Main.storyboard */; };
+		1A35B5612872206E0007A1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B5602872206E0007A1FB /* Assets.xcassets */; };
+		1A35B5642872206E0007A1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B5622872206E0007A1FB /* LaunchScreen.storyboard */; };
+		1A35B56F2872206E0007A1FB /* TrexisProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B56E2872206E0007A1FB /* TrexisProjectTests.swift */; };
+		1A35B5792872206E0007A1FB /* TrexisProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B5782872206E0007A1FB /* TrexisProjectUITests.swift */; };
+		1A35B57B2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B57A2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A35B56B2872206E0007A1FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A35B54C2872206C0007A1FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A35B5532872206C0007A1FB;
+			remoteInfo = TrexisProject;
+		};
+		1A35B5752872206E0007A1FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A35B54C2872206C0007A1FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A35B5532872206C0007A1FB;
+			remoteInfo = TrexisProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A35B5542872206C0007A1FB /* TrexisProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrexisProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A35B5572872206C0007A1FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A35B5592872206C0007A1FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A35B55B2872206C0007A1FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A35B55E2872206C0007A1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A35B5602872206E0007A1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A35B5632872206E0007A1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A35B5652872206E0007A1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A35B56A2872206E0007A1FB /* TrexisProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrexisProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A35B56E2872206E0007A1FB /* TrexisProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexisProjectTests.swift; sourceTree = "<group>"; };
+		1A35B5742872206E0007A1FB /* TrexisProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrexisProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A35B5782872206E0007A1FB /* TrexisProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexisProjectUITests.swift; sourceTree = "<group>"; };
+		1A35B57A2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrexisProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A35B5512872206C0007A1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A35B5672872206E0007A1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A35B5712872206E0007A1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A35B54B2872206C0007A1FB = {
+			isa = PBXGroup;
+			children = (
+				1A35B5562872206C0007A1FB /* TrexisProject */,
+				1A35B56D2872206E0007A1FB /* TrexisProjectTests */,
+				1A35B5772872206E0007A1FB /* TrexisProjectUITests */,
+				1A35B5552872206C0007A1FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A35B5552872206C0007A1FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5542872206C0007A1FB /* TrexisProject.app */,
+				1A35B56A2872206E0007A1FB /* TrexisProjectTests.xctest */,
+				1A35B5742872206E0007A1FB /* TrexisProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A35B5562872206C0007A1FB /* TrexisProject */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5572872206C0007A1FB /* AppDelegate.swift */,
+				1A35B5592872206C0007A1FB /* SceneDelegate.swift */,
+				1A35B55B2872206C0007A1FB /* ViewController.swift */,
+				1A35B55D2872206C0007A1FB /* Main.storyboard */,
+				1A35B5602872206E0007A1FB /* Assets.xcassets */,
+				1A35B5622872206E0007A1FB /* LaunchScreen.storyboard */,
+				1A35B5652872206E0007A1FB /* Info.plist */,
+			);
+			path = TrexisProject;
+			sourceTree = "<group>";
+		};
+		1A35B56D2872206E0007A1FB /* TrexisProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B56E2872206E0007A1FB /* TrexisProjectTests.swift */,
+			);
+			path = TrexisProjectTests;
+			sourceTree = "<group>";
+		};
+		1A35B5772872206E0007A1FB /* TrexisProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B5782872206E0007A1FB /* TrexisProjectUITests.swift */,
+				1A35B57A2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift */,
+			);
+			path = TrexisProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A35B5532872206C0007A1FB /* TrexisProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A35B57E2872206E0007A1FB /* Build configuration list for PBXNativeTarget "TrexisProject" */;
+			buildPhases = (
+				1A35B5502872206C0007A1FB /* Sources */,
+				1A35B5512872206C0007A1FB /* Frameworks */,
+				1A35B5522872206C0007A1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrexisProject;
+			productName = TrexisProject;
+			productReference = 1A35B5542872206C0007A1FB /* TrexisProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A35B5692872206E0007A1FB /* TrexisProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A35B5812872206E0007A1FB /* Build configuration list for PBXNativeTarget "TrexisProjectTests" */;
+			buildPhases = (
+				1A35B5662872206E0007A1FB /* Sources */,
+				1A35B5672872206E0007A1FB /* Frameworks */,
+				1A35B5682872206E0007A1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A35B56C2872206E0007A1FB /* PBXTargetDependency */,
+			);
+			name = TrexisProjectTests;
+			productName = TrexisProjectTests;
+			productReference = 1A35B56A2872206E0007A1FB /* TrexisProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A35B5732872206E0007A1FB /* TrexisProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A35B5842872206E0007A1FB /* Build configuration list for PBXNativeTarget "TrexisProjectUITests" */;
+			buildPhases = (
+				1A35B5702872206E0007A1FB /* Sources */,
+				1A35B5712872206E0007A1FB /* Frameworks */,
+				1A35B5722872206E0007A1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A35B5762872206E0007A1FB /* PBXTargetDependency */,
+			);
+			name = TrexisProjectUITests;
+			productName = TrexisProjectUITests;
+			productReference = 1A35B5742872206E0007A1FB /* TrexisProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A35B54C2872206C0007A1FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1A35B5532872206C0007A1FB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					1A35B5692872206E0007A1FB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1A35B5532872206C0007A1FB;
+					};
+					1A35B5732872206E0007A1FB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1A35B5532872206C0007A1FB;
+					};
+				};
+			};
+			buildConfigurationList = 1A35B54F2872206C0007A1FB /* Build configuration list for PBXProject "TrexisProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A35B54B2872206C0007A1FB;
+			productRefGroup = 1A35B5552872206C0007A1FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A35B5532872206C0007A1FB /* TrexisProject */,
+				1A35B5692872206E0007A1FB /* TrexisProjectTests */,
+				1A35B5732872206E0007A1FB /* TrexisProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A35B5522872206C0007A1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A35B5642872206E0007A1FB /* LaunchScreen.storyboard in Resources */,
+				1A35B5612872206E0007A1FB /* Assets.xcassets in Resources */,
+				1A35B55F2872206C0007A1FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A35B5682872206E0007A1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A35B5722872206E0007A1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A35B5502872206C0007A1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A35B55C2872206C0007A1FB /* ViewController.swift in Sources */,
+				1A35B5582872206C0007A1FB /* AppDelegate.swift in Sources */,
+				1A35B55A2872206C0007A1FB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A35B5662872206E0007A1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A35B56F2872206E0007A1FB /* TrexisProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A35B5702872206E0007A1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A35B5792872206E0007A1FB /* TrexisProjectUITests.swift in Sources */,
+				1A35B57B2872206E0007A1FB /* TrexisProjectUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A35B56C2872206E0007A1FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A35B5532872206C0007A1FB /* TrexisProject */;
+			targetProxy = 1A35B56B2872206E0007A1FB /* PBXContainerItemProxy */;
+		};
+		1A35B5762872206E0007A1FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A35B5532872206C0007A1FB /* TrexisProject */;
+			targetProxy = 1A35B5752872206E0007A1FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A35B55D2872206C0007A1FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A35B55E2872206C0007A1FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A35B5622872206E0007A1FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A35B5632872206E0007A1FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A35B57C2872206E0007A1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A35B57D2872206E0007A1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A35B57F2872206E0007A1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA6LFU3W46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrexisProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.TrexisProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A35B5802872206E0007A1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA6LFU3W46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrexisProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.TrexisProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A35B5822872206E0007A1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA6LFU3W46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.TrexisProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrexisProject.app/TrexisProject";
+			};
+			name = Debug;
+		};
+		1A35B5832872206E0007A1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA6LFU3W46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.TrexisProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrexisProject.app/TrexisProject";
+			};
+			name = Release;
+		};
+		1A35B5852872206E0007A1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA6LFU3W46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.TrexisProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrexisProject;
+			};
+			name = Debug;
+		};
+		1A35B5862872206E0007A1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA6LFU3W46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suha.TrexisProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrexisProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A35B54F2872206C0007A1FB /* Build configuration list for PBXProject "TrexisProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A35B57C2872206E0007A1FB /* Debug */,
+				1A35B57D2872206E0007A1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A35B57E2872206E0007A1FB /* Build configuration list for PBXNativeTarget "TrexisProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A35B57F2872206E0007A1FB /* Debug */,
+				1A35B5802872206E0007A1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A35B5812872206E0007A1FB /* Build configuration list for PBXNativeTarget "TrexisProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A35B5822872206E0007A1FB /* Debug */,
+				1A35B5832872206E0007A1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A35B5842872206E0007A1FB /* Build configuration list for PBXNativeTarget "TrexisProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A35B5852872206E0007A1FB /* Debug */,
+				1A35B5862872206E0007A1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A35B54C2872206C0007A1FB /* Project object */;
+}
