@@ -18,6 +18,7 @@ class TransactionViewController: UIViewController {
     var transactions: [Transaction] = [] {
         didSet {
             self.genericTable.reload(data: transactions)
+            self.shouldShowEmptyView(transactions.count == 0)
         }
     }
     
@@ -55,8 +56,23 @@ class TransactionViewController: UIViewController {
         view.addSubview(genericTable)
     }
     
+    func shouldShowEmptyView(_ show: Bool) {
+        if show {
+            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
+            emptyLabel.text = "No Data"
+            emptyLabel.textAlignment = NSTextAlignment.center
+            self.genericTable.backgroundView = emptyLabel
+        } else {
+            self.genericTable.backgroundView = nil
+        }
+    }
+    
     func fetchData() {
+        let loadingIndicator = LoadingViewController()
+        add(loadingIndicator)
+        
         viewModel.getTransactions(forAccountID: account.id) { [weak self] transactions in
+            loadingIndicator.remove()
             self?.transactions = transactions
         }
     }

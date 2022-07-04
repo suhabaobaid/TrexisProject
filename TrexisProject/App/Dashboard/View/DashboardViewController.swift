@@ -18,6 +18,7 @@ class DashboardViewController: UIViewController {
     var accounts: [Account] = [] {
         didSet {
             self.genericTable.reload(data: accounts)
+            self.shouldShowEmptyView(accounts.count == 0)
         }
     }
     
@@ -52,16 +53,31 @@ class DashboardViewController: UIViewController {
         genericTable = GenericTableViewController(frame: view.bounds, items: accounts, config: { item, cell in
             cell.set(withAccount: item)
         }, selectHandler: { item in
-            print(self.delegate)
             self.delegate?.didTapOnAccount(item)
         })
         
         view.addSubview(genericTable)
     }
     
+    func shouldShowEmptyView(_ show: Bool) {
+        if show {
+            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
+            emptyLabel.text = "No Data"
+            emptyLabel.textAlignment = NSTextAlignment.center
+            self.genericTable.backgroundView = emptyLabel
+        } else {
+            self.genericTable.backgroundView = nil
+        }
+    }
+    
     func fetchData() {
+        let loadingIndicator = LoadingViewController()
+        add(loadingIndicator)
+        
         viewModel.getAccounts { [weak self] accounts in
+            loadingIndicator.remove()
             self?.accounts = accounts
+            
         }
     }
 }
