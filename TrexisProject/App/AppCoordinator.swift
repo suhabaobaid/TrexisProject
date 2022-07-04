@@ -41,6 +41,7 @@ class AppCoordinator: Coordinator {
         setRootChild(coordinator: homeCoordinator, hideBar: true)
     }
     
+    // NOTE: to be used if there is some type of persistence for logged in state
     private func isLoggedIn() -> Bool {
         guard let _ = UserDefaults.standard.string(forKey: "AccessToken") else {
             return false

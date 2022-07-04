@@ -15,9 +15,6 @@ final class DashboardViewModel: NSObject, TransactionAbledViewModel {
     // MARK: - Dependencies
     var apiService: APIService
     
-    // MARK: - Closures
-    var didTapOnAccount: ((Account) -> Void)?
-    
     // MARK: - init
     init(apiService: APIService) {
         self.apiService = apiService
@@ -26,15 +23,21 @@ final class DashboardViewModel: NSObject, TransactionAbledViewModel {
     
     // MARK: - API calls
     func getAccounts(completion: @escaping ([Account]) -> Void) {
-        apiService.getAccounts { data, status, error in
-            let decoder = JSONDecoder()
-            do {
-                let accounts = try decoder.decode([Account].self, from: data as! Data)
-                completion(accounts)
-            } catch {
-                print(error.localizedDescription)
+        apiService.getAccounts { [weak self] data, status, error in
+            if status == 200 {
+                let decoder = JSONDecoder()
+                do {
+                    let accounts = try decoder.decode([Account].self, from: data as! Data)
+                    completion(accounts)
+                } catch {
+                    print(error.localizedDescription)
+                    completion([])
+                }
+            } else {
+                self?.alert.value = Alert(isError: true, message: "Server error - Unable to get accounts")
                 completion([])
             }
+            
         }
     }
     

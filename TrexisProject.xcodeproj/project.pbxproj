@@ -60,6 +60,8 @@
 		1A90DDFB2873586900C445B8 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */; };
 		1A90DE03287377D300C445B8 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DE02287377D300C445B8 /* Box.swift */; };
 		1A90DE052873780900C445B8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DE042873780900C445B8 /* Alert.swift */; };
+		1A90DE072873A13D00C445B8 /* AuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DE062873A13D00C445B8 /* AuthTests.swift */; };
+		1A90DE092873A19900C445B8 /* DashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DE082873A19900C445B8 /* DashboardTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		1A90DE02287377D300C445B8 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		1A90DE042873780900C445B8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		1A90DE062873A13D00C445B8 /* AuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTests.swift; sourceTree = "<group>"; };
+		1A90DE082873A19900C445B8 /* DashboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				1A35B56E2872206E0007A1FB /* TrexisProjectTests.swift */,
+				1A90DE062873A13D00C445B8 /* AuthTests.swift */,
+				1A90DE082873A19900C445B8 /* DashboardTests.swift */,
 			);
 			path = TrexisProjectTests;
 			sourceTree = "<group>";
@@ -636,7 +642,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A90DE092873A19900C445B8 /* DashboardTests.swift in Sources */,
 				1A35B56F2872206E0007A1FB /* TrexisProjectTests.swift in Sources */,
+				1A90DE072873A13D00C445B8 /* AuthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
