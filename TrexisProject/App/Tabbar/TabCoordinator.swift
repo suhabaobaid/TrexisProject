@@ -9,11 +9,38 @@ import UIKit
 
 class TabCoordinator: Coordinator {
     
-    private var rootVC: UITabBarController
+    // MARK: - Child Coordinators
+    private lazy var dashboardCoordinator: DashboardCoordinator = {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem = UITabBarItem(title: "Dashboard", image: UIImage(systemName: "list.bullet.circle"), selectedImage: UIImage(systemName: "list.bullet.circle.fill"))
+        let router = Router(navigationController: navigationController)
+        let coordinator = DashboardCoordinator(router: router, navigationType: .newFlow(hideBar: false))
+        addChild(coordinator)
+        
+        return coordinator
+    }()
     
-    var dashboardCoordinator: DashboardCoordinator
-    var favoriteCoordinator: FavoriteCoordinator
-    var profileCoordinator: ProfileCoordinator
+    private lazy var favoriteCoordinator: FavoriteCoordinator = {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem = UITabBarItem(title: "Favorite", image: UIImage(systemName: "star.circle"), selectedImage: UIImage(systemName: "star.circle.fill"))
+        let router = Router(navigationController: navigationController)
+        let coordinator  = FavoriteCoordinator(router: router, navigationType: .newFlow(hideBar: false))
+        addChild(coordinator)
+        
+        return coordinator
+    }()
+    
+    private lazy var profileCoordinator: ProfileCoordinator = {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.circle"), selectedImage: UIImage(systemName: "person.crop.circle"))
+        let router = Router(navigationController: navigationController)
+        let coordinator  = ProfileCoordinator(router: router, navigationType: .newFlow(hideBar: false))
+        addChild(coordinator)
+        
+        return coordinator
+    }()
+    
+    private var rootVC: UITabBarController
     
     override var root: Presentable {
         return rootVC
@@ -22,20 +49,16 @@ class TabCoordinator: Coordinator {
     init(tabbarController: UITabBarController, router: Router, navigationType: NavigationType) {
         self.rootVC = tabbarController
         
-        dashboardCoordinator = DashboardCoordinator(router: Router(), navigationType: .newFlow(hideBar: true))
-        favoriteCoordinator = FavoriteCoordinator(router: Router(), navigationType: .newFlow(hideBar: true))
-        profileCoordinator = ProfileCoordinator(router: Router(), navigationType: .newFlow(hideBar: true))
-        
         super.init(router: router, navigationType: navigationType)
         
         self.configureTabs()
     }
     
+    deinit {
+        print("Deinit: Tabbar")
+    }
+    
     private func configureTabs() {
-        
-        addChild(dashboardCoordinator)
-        addChild(favoriteCoordinator)
-        addChild(profileCoordinator)
         
         rootVC.setViewControllers([dashboardCoordinator.toPresentable(), profileCoordinator.toPresentable(), favoriteCoordinator.toPresentable()], animated: true)
         rootVC.tabBar.isTranslucent = true

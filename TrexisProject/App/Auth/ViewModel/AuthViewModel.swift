@@ -40,11 +40,8 @@ final class AuthViewModel: NSObject {
     // MARK: - API Calls
     func logInUser(completionHandler: @escaping (Bool, String?) -> Void) {
         guard let form = form , let username = form.username, let password = form.password else {
-            print("here")
             return
         }
-
-        print(form, username, password)
         apiService.login(withUsername: username, password: password) { json, status, error in
             completionHandler(status == 200, error?.localizedDescription)
         }

@@ -22,7 +22,12 @@ class ProfileCoordinator: Coordinator {
         configure()
     }
     
+    deinit {
+        print("Deinit: ProfileCoordinator")
+    }
+    
     private func configure() {
-        router.navigationController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.circle"), selectedImage: UIImage(systemName: "person.crop.circle"))
+        rootVC.title = "Profile"
+        
     }
 }

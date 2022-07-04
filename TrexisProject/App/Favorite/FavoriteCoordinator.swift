@@ -22,7 +22,12 @@ class FavoriteCoordinator: Coordinator {
         configure()
     }
     
+    deinit {
+        print("Deinit: FavoriteCoordinator")
+    }
+    
     private func configure() {
-        router.navigationController.tabBarItem = UITabBarItem(title: "Favorite", image: UIImage(systemName: "star.circle"), selectedImage: UIImage(systemName: "star.circle.fill"))
+        rootVC.title = "Favorite"
+        
     }
 }

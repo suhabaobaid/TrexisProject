@@ -1,5 +1,5 @@
 //
-//  DashboardViewController.swift
+//  TransactionViewController.swift
 //  TrexisProject
 //
 //  Created by Suha Baobaid on 7/4/22.
@@ -7,22 +7,23 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class TransactionViewController: UIViewController {
 
     // MARK: - UI
-    var genericTable: GenericTableViewController<Account, AccountTableViewCell>!
+    var genericTable: GenericTableViewController<Transaction, TransactionTableViewCell>!
     
     // MARK: - Properties
-    var viewModel: DashboardViewModel
-    weak var delegate: DashboardDelegate?
-    var accounts: [Account] = [] {
+    var viewModel: TransactionAbledViewModel
+    var account: Account
+    var transactions: [Transaction] = [] {
         didSet {
-            self.genericTable.reload(data: accounts)
+            self.genericTable.reload(data: transactions)
         }
     }
     
-    init(title: String, viewModel: DashboardViewModel) {
+    init(title: String, account: Account, viewModel: TransactionAbledViewModel) {
         self.viewModel = viewModel
+        self.account = account
         super.init(nibName: nil, bundle: nil)
         self.title = title
     }
@@ -45,19 +46,19 @@ class DashboardViewController: UIViewController {
     }
     
     private func configureTableView() {
-        genericTable = GenericTableViewController(frame: view.bounds, items: accounts, config: { item, cell in
-            cell.set(withAccount: item)
+        genericTable = GenericTableViewController(frame: view.bounds, items: transactions, config: { item, cell in
+            cell.set(withTransaction: item)
         }, selectHandler: { item in
-            print(self.delegate)
-            self.delegate?.didTapOnAccount(item)
+            print(item)
         })
         
         view.addSubview(genericTable)
     }
     
     func fetchData() {
-        viewModel.getAccounts { [weak self] accounts in
-            self?.accounts = accounts
+        viewModel.getTransactions(forAccountID: account.id) { [weak self] transactions in
+            self?.transactions = transactions
         }
     }
+
 }

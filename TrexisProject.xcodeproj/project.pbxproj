@@ -50,6 +50,14 @@
 		1A90DDE5287340E400C445B8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDE4287340E400C445B8 /* DashboardViewController.swift */; };
 		1A90DDE72873412800C445B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDE62873412800C445B8 /* ProfileViewController.swift */; };
 		1A90DDE92873413D00C445B8 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDE82873413D00C445B8 /* FavoriteViewController.swift */; };
+		1A90DDEB2873429C00C445B8 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDEA2873429C00C445B8 /* DashboardViewModel.swift */; };
+		1A90DDED2873453500C445B8 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDEC2873453500C445B8 /* GenericTableViewController.swift */; };
+		1A90DDEF28734AFB00C445B8 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDEE28734AFB00C445B8 /* AccountTableViewCell.swift */; };
+		1A90DDF1287354DE00C445B8 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDF0287354DE00C445B8 /* Account.swift */; };
+		1A90DDF42873570000C445B8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDF32873570000C445B8 /* Transaction.swift */; };
+		1A90DDF72873575700C445B8 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDF62873575700C445B8 /* TransactionViewController.swift */; };
+		1A90DDF9287357DD00C445B8 /* TransactionableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDF8287357DD00C445B8 /* TransactionableViewModel.swift */; };
+		1A90DDFB2873586900C445B8 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +125,14 @@
 		1A90DDE4287340E400C445B8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1A90DDE62873412800C445B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1A90DDE82873413D00C445B8 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		1A90DDEA2873429C00C445B8 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		1A90DDEC2873453500C445B8 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		1A90DDEE28734AFB00C445B8 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		1A90DDF0287354DE00C445B8 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		1A90DDF32873570000C445B8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		1A90DDF62873575700C445B8 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		1A90DDF8287357DD00C445B8 /* TransactionableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionableViewModel.swift; sourceTree = "<group>"; };
+		1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +232,7 @@
 				1A35B58D2872210E0007A1FB /* Presentable.swift */,
 				1A35B5AE287242550007A1FB /* AuthenticateDelegate.swift */,
 				1A35B5C4287247C70007A1FB /* FormProtocol.swift */,
+				1A90DDF8287357DD00C445B8 /* TransactionableViewModel.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -235,6 +252,7 @@
 				1A35B591287221480007A1FB /* AppCoordinator.swift */,
 				1A35B5A3287233930007A1FB /* Favorite */,
 				1A35B5A22872333B0007A1FB /* Profile */,
+				1A90DDF52873573E00C445B8 /* Transaction */,
 				1A35B5A12872332E0007A1FB /* Dashboard */,
 				1A35B597287224B80007A1FB /* Tabbar */,
 				1A35B596287224AF0007A1FB /* Auth */,
@@ -285,6 +303,7 @@
 			children = (
 				1A90DDE3287340D400C445B8 /* View */,
 				1A35B5A4287233C20007A1FB /* DashboardCoordinator.swift */,
+				1A90DDEA2873429C00C445B8 /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -324,6 +343,7 @@
 			children = (
 				1A35B5AC287242210007A1FB /* LoadingViewController.swift */,
 				1A90DDDB28733E5600C445B8 /* MinimumAlertViewController.swift */,
+				1A90DDEC2873453500C445B8 /* GenericTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -349,6 +369,8 @@
 		1A35B5B4287243840007A1FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1A90DDF0287354DE00C445B8 /* Account.swift */,
+				1A90DDF32873570000C445B8 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,8 +431,18 @@
 			isa = PBXGroup;
 			children = (
 				1A90DDE4287340E400C445B8 /* DashboardViewController.swift */,
+				1A90DDEE28734AFB00C445B8 /* AccountTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1A90DDF52873573E00C445B8 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				1A90DDF62873575700C445B8 /* TransactionViewController.swift */,
+				1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +586,7 @@
 				1A35B5BB287244680007A1FB /* UIColor+Ext.swift in Sources */,
 				1A90DDDC28733E5600C445B8 /* MinimumAlertViewController.swift in Sources */,
 				1A35B589287220C60007A1FB /* Coordinator.swift in Sources */,
+				1A90DDF42873570000C445B8 /* Transaction.swift in Sources */,
 				1A35B599287224E20007A1FB /* TabCoordinator.swift in Sources */,
 				1A35B58B287220EC0007A1FB /* Router.swift in Sources */,
 				1A35B5C5287247C70007A1FB /* FormProtocol.swift in Sources */,
@@ -561,6 +594,7 @@
 				1A90DDDE28733E8A00C445B8 /* FootNoteLabel.swift in Sources */,
 				1A35B5D728727AEC0007A1FB /* Textfield.swift in Sources */,
 				1A90DDE228733F1600C445B8 /* CustomTapGesture.swift in Sources */,
+				1A90DDF72873575700C445B8 /* TransactionViewController.swift in Sources */,
 				1A35B5582872206C0007A1FB /* AppDelegate.swift in Sources */,
 				1A35B5A92872341A0007A1FB /* FavoriteCoordinator.swift in Sources */,
 				1A90DDE5287340E400C445B8 /* DashboardViewController.swift in Sources */,
@@ -573,14 +607,20 @@
 				1A90DDDA2873386400C445B8 /* APIService.swift in Sources */,
 				1A35B595287223B20007A1FB /* UIViewController+Ext.swift in Sources */,
 				1A35B5BD287244AE0007A1FB /* Fonts.swift in Sources */,
+				1A90DDED2873453500C445B8 /* GenericTableViewController.swift in Sources */,
 				1A35B5D3287259C50007A1FB /* PrimaryButton.swift in Sources */,
+				1A90DDF9287357DD00C445B8 /* TransactionableViewModel.swift in Sources */,
 				1A35B5CE28724E1D0007A1FB /* Padding.swift in Sources */,
 				1A35B5D9287282680007A1FB /* AuthViewModel.swift in Sources */,
 				1A35B592287221480007A1FB /* AppCoordinator.swift in Sources */,
+				1A90DDFB2873586900C445B8 /* TransactionTableViewCell.swift in Sources */,
 				1A35B59D2872263C0007A1FB /* LoginViewController.swift in Sources */,
 				1A90DDE72873412800C445B8 /* ProfileViewController.swift in Sources */,
+				1A90DDEB2873429C00C445B8 /* DashboardViewModel.swift in Sources */,
+				1A90DDEF28734AFB00C445B8 /* AccountTableViewCell.swift in Sources */,
 				1A35B5AF287242550007A1FB /* AuthenticateDelegate.swift in Sources */,
 				1A35B5C3287245280007A1FB /* Strings.swift in Sources */,
+				1A90DDF1287354DE00C445B8 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

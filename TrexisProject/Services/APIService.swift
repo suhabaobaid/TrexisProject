@@ -28,6 +28,8 @@ public class APIService {
     
     struct Constants {
         static let login = "/login"
+        static let accounts = "/accounts"
+        static let transactions = "/transactions"
     }
     
     public let environment: Environment
@@ -47,13 +49,7 @@ public class APIService {
         loadData(path: path, method: method, query: query, body: body) { (data, code, error) in
             let code = code
             
-            var json: Any? = nil
-            
-            if let data = data {
-                json = try? JSONSerialization.jsonObject(with: data, options: [.allowFragments])
-            }
-            
-            completion(json, code, error)
+            completion(data, code, error)
         }
     }
     
@@ -103,8 +99,18 @@ public class APIService {
             "password": password
         ]
         
-        load(path: Constants.login, method: .post, body: body) { (json, code, error) in
-            completion(json, code, error)
+        load(path: Constants.login, method: .post, body: body) { (data, code, error) in
+            completion(data, code, error)
         }
+    }
+    
+    public func getAccounts(completion: @escaping (Any?, Int, Error?) -> Void) {
+        load(path: Constants.accounts, method: .get) { data, code, error in
+            completion(data, code, error)
+        }
+    }
+    
+    public func fetchTransactions(for accountId: String, completion: @escaping (Any?, Int, Error?) -> Void) {
+        load(path: Constants.transactions + "?accountId=\(accountId)", completion: completion)
     }
 }
