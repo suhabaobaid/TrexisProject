@@ -9,11 +9,15 @@ import Foundation
 import UIKit
 
 class ProfileCoordinator: Coordinator {
+    
+    var rootVC: ProfileViewController
+    
     override var root: Presentable {
-        return router.toPresentable()
+        return rootVC
     }
     
     override init(router: Router, navigationType: Coordinator.NavigationType) {
+        self.rootVC = ProfileViewController()
         super.init(router: router, navigationType: navigationType)
         configure()
     }

@@ -9,11 +9,14 @@ import UIKit
 
 class DashboardCoordinator: Coordinator {
     
+    var rootVC: DashboardViewController
+    
     override var root: Presentable {
-        return router.toPresentable()
+        return rootVC
     }
     
     override init(router: Router, navigationType: Coordinator.NavigationType) {
+        self.rootVC = DashboardViewController()
         super.init(router: router, navigationType: navigationType)
         configure()
     }

@@ -27,8 +27,9 @@ class AppCoordinator: Coordinator {
     }
     
     func showLoginScreen() {
-        let authCoordinator = AuthCoordinator(rootVC: LoginViewController(), router: router, navigationType: .newFlow(hideBar: true))
-        setRootChild(coordinator: authCoordinator, hideBar: true)
+        let authCoordinator = AuthCoordinator(router: router, navigationType: .newFlow(hideBar: false))
+        authCoordinator.delegate = self
+        setRootChild(coordinator: authCoordinator, hideBar: false)
     }
     
     func showHomeScreen() {
@@ -43,5 +44,12 @@ class AppCoordinator: Coordinator {
         return true
     }
     
+}
+
+// MARK: - AuthCoordinatorDelegate
+extension AppCoordinator: AuthCoordinatorDelegate {
+    func didFinishAuth() {
+        showHomeScreen()
+    }
 }
 

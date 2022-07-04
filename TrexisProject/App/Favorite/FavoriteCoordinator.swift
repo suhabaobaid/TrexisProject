@@ -9,11 +9,15 @@ import Foundation
 import UIKit
 
 class FavoriteCoordinator: Coordinator {
+    
+    var rootVC: FavoriteViewController
+    
     override var root: Presentable {
-        return router.toPresentable()
+        return rootVC
     }
     
     override init(router: Router, navigationType: Coordinator.NavigationType) {
+        self.rootVC = FavoriteViewController()
         super.init(router: router, navigationType: navigationType)
         configure()
     }
