@@ -58,6 +58,8 @@
 		1A90DDF72873575700C445B8 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDF62873575700C445B8 /* TransactionViewController.swift */; };
 		1A90DDF9287357DD00C445B8 /* TransactionableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDF8287357DD00C445B8 /* TransactionableViewModel.swift */; };
 		1A90DDFB2873586900C445B8 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */; };
+		1A90DE03287377D300C445B8 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DE02287377D300C445B8 /* Box.swift */; };
+		1A90DE052873780900C445B8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90DE042873780900C445B8 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		1A90DDF62873575700C445B8 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		1A90DDF8287357DD00C445B8 /* TransactionableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionableViewModel.swift; sourceTree = "<group>"; };
 		1A90DDFA2873586900C445B8 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		1A90DE02287377D300C445B8 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		1A90DE042873780900C445B8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +427,8 @@
 			isa = PBXGroup;
 			children = (
 				1A90DDE128733F1600C445B8 /* CustomTapGesture.swift */,
+				1A90DE02287377D300C445B8 /* Box.swift */,
+				1A90DE042873780900C445B8 /* Alert.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -605,6 +611,7 @@
 				1A35B5CA28724BB50007A1FB /* FormTextFieldTableViewCell.swift in Sources */,
 				1A35B5C7287248640007A1FB /* LoginForm.swift in Sources */,
 				1A90DDDA2873386400C445B8 /* APIService.swift in Sources */,
+				1A90DE052873780900C445B8 /* Alert.swift in Sources */,
 				1A35B595287223B20007A1FB /* UIViewController+Ext.swift in Sources */,
 				1A35B5BD287244AE0007A1FB /* Fonts.swift in Sources */,
 				1A90DDED2873453500C445B8 /* GenericTableViewController.swift in Sources */,
@@ -613,6 +620,7 @@
 				1A35B5CE28724E1D0007A1FB /* Padding.swift in Sources */,
 				1A35B5D9287282680007A1FB /* AuthViewModel.swift in Sources */,
 				1A35B592287221480007A1FB /* AppCoordinator.swift in Sources */,
+				1A90DE03287377D300C445B8 /* Box.swift in Sources */,
 				1A90DDFB2873586900C445B8 /* TransactionTableViewCell.swift in Sources */,
 				1A35B59D2872263C0007A1FB /* LoginViewController.swift in Sources */,
 				1A90DDE72873412800C445B8 /* ProfileViewController.swift in Sources */,

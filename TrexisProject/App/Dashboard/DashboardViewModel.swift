@@ -9,6 +9,9 @@ import UIKit
 
 final class DashboardViewModel: NSObject, TransactionAbledViewModel {
     
+    // MARK: - Properties
+    var alert: Box<Alert?> = Box(nil)
+    
     // MARK: - Dependencies
     var apiService: APIService
     
@@ -36,7 +39,7 @@ final class DashboardViewModel: NSObject, TransactionAbledViewModel {
     }
     
     func getTransactions(forAccountID accountID: String, completion: @escaping ([Transaction]) -> Void) {
-        apiService.fetchTransactions(for: accountID) { data, status, error in
+        apiService.fetchTransactions(for: accountID) { [weak self] data, status, error in
             if status == 200 {
                 let decoder = JSONDecoder()
                 do {
@@ -44,9 +47,11 @@ final class DashboardViewModel: NSObject, TransactionAbledViewModel {
                     completion(transactions)
                 } catch {
                     print(error.localizedDescription)
+                    self?.alert.value = Alert(isError: true, message: error.localizedDescription)
                     completion([])
                 }
             } else {
+                self?.alert.value = Alert(isError: true, message: "Server error")
                 completion([])
             }
         }

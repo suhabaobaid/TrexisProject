@@ -59,7 +59,6 @@ class TabCoordinator: Coordinator {
     }
     
     private func configureTabs() {
-        
         rootVC.setViewControllers([dashboardCoordinator.toPresentable(), profileCoordinator.toPresentable(), favoriteCoordinator.toPresentable()], animated: true)
         rootVC.tabBar.isTranslucent = true
         rootVC.delegate = self

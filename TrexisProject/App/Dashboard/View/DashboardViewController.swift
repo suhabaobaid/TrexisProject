@@ -41,6 +41,7 @@ class DashboardViewController: UIViewController {
 
         configureViewController()
         configureTableView()
+        attachListeners()
         fetchData()
     }
 
@@ -57,6 +58,13 @@ class DashboardViewController: UIViewController {
         })
         
         view.addSubview(genericTable)
+    }
+    
+    func attachListeners() {
+        viewModel.alert.bind { [weak self] alert in
+            guard let alert = alert else { return }
+            self?.presentMinimumAlertonMainThread(message: alert.message, isError: alert.isError, dismissTime: 3)
+        }
     }
     
     func shouldShowEmptyView(_ show: Bool) {

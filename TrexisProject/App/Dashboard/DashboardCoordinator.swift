@@ -38,7 +38,6 @@ class DashboardCoordinator: Coordinator {
     }
     
     private func coordinateToTransactions(forAccount account: Account) {
-        print("transaction")
         let transactionsVC = TransactionViewController(title: "Transactions", account: account, viewModel: viewModel)
         router.push(transactionsVC, animated: true)
     }
@@ -49,6 +48,4 @@ extension DashboardCoordinator: DashboardDelegate {
     func didTapOnAccount(_ account: Account) {
         coordinateToTransactions(forAccount: account)
     }
-    
-    
 }
