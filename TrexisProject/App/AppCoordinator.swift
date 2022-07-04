@@ -18,6 +18,10 @@ class AppCoordinator: Coordinator {
         start()
     }
     
+    deinit {
+        print("Deinit: AppCoordinator")
+    }
+    
     func start() {
         if isLoggedIn() {
             showHomeScreen()
@@ -27,13 +31,13 @@ class AppCoordinator: Coordinator {
     }
     
     func showLoginScreen() {
-        let authCoordinator = AuthCoordinator(router: router, navigationType: .newFlow(hideBar: false))
+        let authCoordinator = AuthCoordinator(router: router, navigationType: .currentFlow)
         authCoordinator.delegate = self
         setRootChild(coordinator: authCoordinator, hideBar: false)
     }
     
     func showHomeScreen() {
-        let homeCoordinator = TabCoordinator(tabbarController: UITabBarController(), router: router, navigationType: .newFlow(hideBar: true))
+        let homeCoordinator = TabCoordinator(tabbarController: UITabBarController(), router: router, navigationType: .currentFlow)
         setRootChild(coordinator: homeCoordinator, hideBar: true)
     }
     

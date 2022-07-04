@@ -32,6 +32,11 @@ public class APIService {
         static let transactions = "/transactions"
     }
     
+    enum BodyFormat {
+        case urlEncodedFormat
+        case params
+    }
+    
     public let environment: Environment
     
     init(_ environment: Environment = APIService.defaultEnvironment) {
@@ -111,6 +116,6 @@ public class APIService {
     }
     
     public func fetchTransactions(for accountId: String, completion: @escaping (Any?, Int, Error?) -> Void) {
-        load(path: Constants.transactions + "?accountId=\(accountId)", completion: completion)
+        load(path: Constants.transactions, query: ["accountId": accountId] ,completion: completion)
     }
 }

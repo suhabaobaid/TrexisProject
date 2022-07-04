@@ -33,6 +33,7 @@ class DashboardCoordinator: Coordinator {
     }
     
     private func configure() {
+        router.navigationController.navigationBar.tintColor = Colors.primaryColor
         router.navigationController.navigationBar.prefersLargeTitles = true
     }
     
