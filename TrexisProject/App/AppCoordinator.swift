@@ -23,7 +23,7 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        if isLoggedIn() {
+        if User.isLoggedIn() {
             showHomeScreen()
         } else {
             showLoginScreen()
@@ -39,14 +39,6 @@ class AppCoordinator: Coordinator {
     func showHomeScreen() {
         let homeCoordinator = TabCoordinator(tabbarController: UITabBarController(), router: router, navigationType: .currentFlow)
         setRootChild(coordinator: homeCoordinator, hideBar: true)
-    }
-    
-    // NOTE: to be used if there is some type of persistence for logged in state
-    private func isLoggedIn() -> Bool {
-        guard let _ = UserDefaults.standard.string(forKey: "AccessToken") else {
-            return false
-        }
-        return true
     }
     
 }
